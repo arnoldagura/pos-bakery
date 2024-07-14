@@ -56,12 +56,16 @@
                                         <label for="username" class="form-label">Email/Phone</label>
                                         <input 
                                             class="form-control" 
+                                            @error('username') is-invalid @enderror
                                             type="text" 
                                             id="username" 
                                             name="username" 
                                             required="" 
                                             placeholder="Enter your email/phone"
                                             autocomplete="username" />
+                                            @error('username')  
+                                                <span class="text-danger"> {{ $message }} </span>
+                                            @enderror
                                     </div>
 
                                     <div class="mb-3">
@@ -78,6 +82,9 @@
                                                 <span class="password-eye"></span>
                                             </div>
                                         </div>
+                                        @error('password')  
+                                            <span class="text-danger"> {{ $message }} </span>
+                                        @enderror
                                     </div>
 
                                     <div class="mb-3">
