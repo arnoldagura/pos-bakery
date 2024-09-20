@@ -140,6 +140,10 @@ class ComposerStaticInit0dfe5cc3ab3986d74b666a0f7d14b913
             'Illuminate\\Support\\' => 19,
             'Illuminate\\' => 11,
         ),
+        'H' => 
+        array (
+            'Haruncpi\\LaravelIdGenerator\\' => 28,
+        ),
         'G' => 
         array (
             'GuzzleHttp\\UriTemplate\\' => 23,
@@ -459,6 +463,10 @@ class ComposerStaticInit0dfe5cc3ab3986d74b666a0f7d14b913
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
         ),
+        'Haruncpi\\LaravelIdGenerator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/haruncpi/laravel-id-generator/src',
+        ),
         'GuzzleHttp\\UriTemplate\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/uri-template/src',
@@ -561,13 +569,16 @@ class ComposerStaticInit0dfe5cc3ab3986d74b666a0f7d14b913
         'App\\Http\\Controllers\\Auth\\PasswordResetLinkController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/PasswordResetLinkController.php',
         'App\\Http\\Controllers\\Auth\\RegisteredUserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisteredUserController.php',
         'App\\Http\\Controllers\\Auth\\VerifyEmailController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerifyEmailController.php',
+        'App\\Http\\Controllers\\Backend\\CategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/CategoryController.php',
         'App\\Http\\Controllers\\Backend\\EmployeeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/EmployeeController.php',
+        'App\\Http\\Controllers\\Backend\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/ProductController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\Product' => __DIR__ . '/../..' . '/app/Http/Controllers/Product.php',
         'App\\Http\\Controllers\\ProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfileController.php',
         'App\\Http\\Requests\\Auth\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Auth/LoginRequest.php',
         'App\\Http\\Requests\\ProfileUpdateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ProfileUpdateRequest.php',
         'App\\Kernel' => __DIR__ . '/..' . '/laravel/pint/app/Kernel.php',
+        'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
         'App\\Models\\Employee' => __DIR__ . '/../..' . '/app/Models/Employee.php',
         'App\\Models\\Product' => __DIR__ . '/../..' . '/app/Models/Product.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
@@ -1583,6 +1594,9 @@ class ComposerStaticInit0dfe5cc3ab3986d74b666a0f7d14b913
         'Hamcrest\\Type\\IsString' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php',
         'Hamcrest\\Util' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
         'Hamcrest\\Xml\\HasXPath' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
+        'Haruncpi\\LaravelIdGenerator\\IdGenerator' => __DIR__ . '/..' . '/haruncpi/laravel-id-generator/src/IdGenerator.php',
+        'Haruncpi\\LaravelIdGenerator\\IdGeneratorServiceProvider' => __DIR__ . '/..' . '/haruncpi/laravel-id-generator/src/IdGeneratorServiceProvider.php',
+        'Haruncpi\\LaravelIdGenerator\\Traits\\IdFactory' => __DIR__ . '/..' . '/haruncpi/laravel-id-generator/src/Traits/IdFactory.php',
         'Illuminate\\Auth\\Access\\AuthorizationException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/AuthorizationException.php',
         'Illuminate\\Auth\\Access\\Events\\GateEvaluated' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/Events/GateEvaluated.php',
         'Illuminate\\Auth\\Access\\Gate' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/Gate.php',

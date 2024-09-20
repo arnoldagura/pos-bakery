@@ -94,28 +94,67 @@
             <li>
                 <a href="#sidebarEmail" data-bs-toggle="collapse">
                     <i class="mdi mdi-email-multiple-outline"></i>
-                    <span> Email </span>
+                    <span> Manage Category </span>
                     <span class="menu-arrow"></span>
                 </a>
                 <div class="collapse" id="sidebarEmail">
-                    <ul class="nav-second-level">
+                <ul class="nav-second-level">
                         <li>
-                            <a href="email-inbox.html">Inbox</a>
+                        <a href="{{ route('all.category') }}">All Category</a>
                         </li>
                         <li>
-                            <a href="email-read.html">Read Email</a>
-                        </li>
-                        <li>
-                            <a href="email-compose.html">Compose Email</a>
-                        </li>
-                        <li>
-                            <a href="email-templates.html">Email Templates</a>
                         </li>
                     </ul>
                 </div>
             </li>
 
-         
+        <li>
+            <a href="#product" data-bs-toggle="collapse">
+                <i class="mdi mdi-email-multiple-outline"></i>
+                <span> Products  </span>
+                <span class="menu-arrow"></span>
+            </a>
+            <div class="collapse" id="product">
+                <ul class="nav-second-level">
+                    <li>
+                        <a href="{{ route('all.product') }}">All Product </a>
+                    </li>
+
+                     <li>
+                        <a href="{{ route('add.product') }}">Add Product </a>
+                    </li>
+                     <li>
+                        <a href="{{ route('import.product') }}">Import Product </a>
+                    </li>
+                
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#sidebarAuth" data-bs-toggle="collapse">
+                <i class="mdi mdi-account-circle-outline"></i>
+                <span>Expense </span>
+                <span class="menu-arrow"></span>
+            </a>
+            <div class="collapse" id="sidebarAuth">
+            <ul class="nav-second-level">
+                <li>
+                    <a href="{{ route('add.expense') }}">Add Expense</a>
+                </li>
+                <li>
+                    <a href="{{ route('today.expense') }}">Today Expense</a>
+                </li>
+                <li>
+                    <a href="{{ route('month.expense') }}">Monthly Expense</a>
+                </li>
+                <li>
+                    <a href="{{ route('year.expense') }}">Yearly Expense</a>
+                </li>
+                
+            </ul>
+            </div>
+        </li>
+        
             <li class="menu-title mt-2">Custom</li>
 
             <li>
