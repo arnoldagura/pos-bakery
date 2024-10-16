@@ -142,7 +142,7 @@
      -->
                    
                         <li class="dropdown notification-list topbar-dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button">
                                 <i class="fe-bell noti-icon"></i>
                                 <span class="badge bg-danger rounded-circle noti-icon-badge">9</span>
                             </a>
