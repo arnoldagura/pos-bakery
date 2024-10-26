@@ -8,9 +8,11 @@ use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\ExpenseController;
 use App\Http\Controllers\Backend\PosController;
+use App\Http\Controllers\Backend\OrderController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
+    // return view('welcome');
 });
 
 Route::get('/dashboard', function () {
@@ -37,8 +39,7 @@ Route::middleware('auth')->group(function () {
         Route::post('/store/category','StoreCategory')->name('category.store');  
         Route::get('/edit/category/{id}','EditCategory')->name('edit.category');
         Route::post('/update/category','UpdateCategory')->name('category.update'); 
-        Route::get('/delete/category/{id}','DeleteCategory')->name('delete.category'); 
-        
+        Route::get('/delete/category/{id}','DeleteCategory')->name('delete.category');  
     });
 
         
@@ -91,7 +92,21 @@ Route::middleware('auth')->group(function () {
         Route::post('/cart-update/{rowId}','CartUpdate');
         Route::get('/cart-remove/{rowId}','CartRemove');
         Route::post('/create-invoice','CreateInvoice');
-       });
+        Route::post('/create-invoice','CreateInvoice');
+    });
+    
+    Route::controller(OrderController::class)->group(function(){
+
+        Route::post('/final-invoice','FinalInvoice');
+        Route::get('/pending/order','PendingOrder')->name('pending.order');
+        Route::get('/order/details/{order_id}','OrderDetails')->name('order.details');
+        Route::post('/order/status/update','OrderStatusUpdate')->name('order.status.update');
+    
+        Route::get('/complete/order','CompleteOrder')->name('complete.order');
+    
+        Route::get('/stock','StockManage')->name('stock.manage');
+        Route::get('/order/invoice-download/{order_id}','OrderInvoice');
+    });
 });
 
 require __DIR__.'/auth.php';

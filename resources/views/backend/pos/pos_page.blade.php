@@ -126,8 +126,12 @@
         <br>
             <form id="myForm" method="post" action="{{ url('/create-invoice') }}">
                 @csrf
-            
-                <button class="btn btn-blue waves-effect waves-light">Create Invoice</button>
+             
+                <div class="form-group mb-3">
+                    <label for="firstname" class="form-label">Customer </label>
+                    <input name="name" value="">
+                </div>
+                <button class="btn btn-blue waves-effect waves-light">Checkout</button>
 
 
             </form>
